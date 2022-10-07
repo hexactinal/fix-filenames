@@ -20,6 +20,10 @@ def do_args_error_checking(user_args: list[str]) -> str:
         return user_args[1]
 
 
-user_filename = do_args_error_checking(sys.argv)
+def main():
+    user_filename = do_args_error_checking(sys.argv)
+    print(f"---Searching '{user_filename}'---")
 
-print(f"---Searching '{user_filename}'---")
+
+if __name__ == "__main__":
+    main()
